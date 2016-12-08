@@ -1,5 +1,7 @@
 package New_topic_Maven;
 
+import org.apache.tools.ant.taskdefs.Exit;
+
 import java.util.Scanner;
 
 /**
@@ -26,9 +28,9 @@ public class TubeMap {
         String PicadillyCircus [] ={"Picadilly Line","Bakerloo Line"};
         String Bondstreet []= {"Central Line","Jubilee Line "};
         String Temple []={"District Line","Circle Line"};
-int attempt = 0;
-        while(attemp<3){
-            try {
+int attempt=0;
+        while(attempt<3){
+
 
                 System.out.println("Enterthe name of station from following list:\nRegentsPark , OxfordCircus , Holborn , Euston, Warrenstreet,\nBarersStreet, GreenPark, PicadillyCircus, BondStreet, Temple");
                 Scanner sc = new Scanner(System.in);
@@ -77,42 +79,28 @@ int attempt = 0;
                 } else if (station.equals("BONDSTREET")) {
                     for (String i : Bondstreet) {
                         System.out.println(i);
+                        
                     }
-
-                } else if (station.equals("Temple")) {
+                }
+                else if (station.equals("Temple")) {
                     for (String j : Temple) {
                         System.out.println(j);
                     }
-
-//                default:
-//                    System.out.println("Station out of Zone One\nPlease Try again\ntwo attemps remaining  ");
-//                    Scanner scanner = new Scanner(System.in);
                 }
-            }
-            catch (Exception e) {
-                //System.out.println(e.getMessage());
-            }
-            if (attemp ==1){
-                System.out.println("Station out of Zone One\nPlease Try again\ntwo attemps remaining  ");
-                Scanner scanner = new Scanner(System.in);
-            }
-            else if (attemp==2){
 
+            attempt ++;
+            System.out.println(attempt);
+            if (attempt ==1){
+                System.out.println("Station out of Zone One\nPlease Try again\ntwo attemps remaining  ");
+            }
+            else if (attempt==2){
                 System.out.println("Station out of Zone One\nPlease Try again\none attemps remaining  ");
-                Scanner scanner = new Scanner(System.in);
             }
             else {
-
                 System.out.println("Station out of Zone One\nSorry ! You can not enter any more choice . Try next time");
-                Scanner scanner = new Scanner(System.in);
             }
 
-
-
-
-
-        }attempt ++;
-
+        }
 
     }
 }
