@@ -14,7 +14,7 @@ public class TubeMap {
 //        Scanner sc=new Scanner(System.in);
 //        String station_name=sc.nextLine();
 //        String station = station_name.toUpperCase();
-        int attemp = 0;
+       // int attemp = 0;
 
 
 
@@ -32,7 +32,7 @@ int attempt=0;
         while(attempt<3){
 
 
-                System.out.println("Enterthe name of station from following list:\nRegentsPark , OxfordCircus , Holborn , Euston, Warrenstreet,\nBarersStreet, GreenPark, PicadillyCircus, BondStreet, Temple");
+                System.out.println("Enterthe name of station from following list:\nRegentsPark , OxfordCircus , Holborn , Euston, Warrenstreet,\nBakersStreet, GreenPark, PicadillyCircus, BondStreet, Temple");
                 Scanner sc = new Scanner(System.in);
                 String station_name = sc.nextLine();
                 String station = station_name.toUpperCase();
@@ -40,61 +40,61 @@ int attempt=0;
                     for (String aa : RegentsPark) {
                         System.out.println(aa);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("OXFORDCIRCUS")) {
                     for (String bb : OxfordCircus) {
                         System.out.println(bb);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("HOLBORN")) {
                     for (String cc : Holborn) {
                         System.out.println(cc);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("EUSTON")) {
                     for (String dd : Euston) {
                         System.out.println(dd);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("WARRENSTREET")) {
                     for (String ee : WarrenStreet) {
                         System.out.println(ee);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("BAKERSTREET")) {
                     for (String ff : BakerStreet) {
                         System.out.println(ff);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("GREENPARK")) {
                     for (String gg : GreenPark) {
                         System.out.println(gg);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("PICADILLYCIRCUS")) {
                     for (String h : PicadillyCircus) {
                         System.out.println(h);
                     }
-
+                    System.exit(0);
                 } else if (station.equals("BONDSTREET")) {
                     for (String i : Bondstreet) {
                         System.out.println(i);
-                        
                     }
-                }
-                else if (station.equals("Temple")) {
+                    System.exit(0);
+                } else if (station.equals("TEMPLE")) {
                     for (String j : Temple) {
                         System.out.println(j);
                     }
+                    System.exit(0);
                 }
 
             attempt ++;
-            System.out.println(attempt);
+
             if (attempt ==1){
-                System.out.println("Station out of Zone One\nPlease Try again\ntwo attemps remaining  ");
+                System.out.println("Station out of Zone One\nPlease Try again\ntwo attemps remaining \n\n ");
             }
             else if (attempt==2){
-                System.out.println("Station out of Zone One\nPlease Try again\none attemps remaining  ");
+                System.out.println("Station out of Zone One\nPlease Try again\none attemps remaining\n\n  ");
             }
             else {
                 System.out.println("Station out of Zone One\nSorry ! You can not enter any more choice . Try next time");
