@@ -10,13 +10,6 @@ import java.util.Scanner;
 public class TubeMap {
     public static void main(String[] args) {
 
-//        System.out.println("Enterthe name of station from following list:\nRegentsPark , OxfordCircus , Holborn , Euston, Warrenstreet,\nBarersStreet, GreenPark, PicadillyCircus, BondStreet, Temple");
-//        Scanner sc=new Scanner(System.in);
-//        String station_name=sc.nextLine();
-//        String station = station_name.toUpperCase();
-       // int attemp = 0;
-
-
 
         String RegentsPark []={"Bakerloo Line"};
         String OxfordCircus []={"Victoria Line","Bakerloo Line","Central Line"};
@@ -28,80 +21,75 @@ public class TubeMap {
         String PicadillyCircus [] ={"Picadilly Line","Bakerloo Line"};
         String Bondstreet []= {"Central Line","Jubilee Line "};
         String Temple []={"District Line","Circle Line"};
-int attempt=0;
+        int attempt=0;
+
         while(attempt<3){
-
-
-                System.out.println("Enterthe name of station from following list:\nRegentsPark , OxfordCircus , Holborn , Euston, Warrenstreet,\nBakersStreet, GreenPark, PicadillyCircus, BondStreet, Temple");
+                System.out.println("Enterthe name of station from following list:\n\nRegentsPark , OxfordCircus , Holborn , Euston, Warrenstreet,\nBakersStreet, GreenPark, PicadillyCircus, BondStreet, Temple");
                 Scanner sc = new Scanner(System.in);
-                String station_name = sc.nextLine();
-                String station = station_name.toUpperCase();
-                if (station.equals("REGENTSPARK")) {
+                String station = sc.nextLine();
+                if (station.equalsIgnoreCase("REGENTSPARK")) {
                     for (String aa : RegentsPark) {
                         System.out.println(aa);
                     }
                     System.exit(0);
-                } else if (station.equals("OXFORDCIRCUS")) {
+                } else if (station.equalsIgnoreCase("OXFORDCIRCUS")) {
                     for (String bb : OxfordCircus) {
                         System.out.println(bb);
                     }
                     System.exit(0);
-                } else if (station.equals("HOLBORN")) {
+                } else if (station.equalsIgnoreCase("HOLBORN")) {
                     for (String cc : Holborn) {
                         System.out.println(cc);
                     }
                     System.exit(0);
-                } else if (station.equals("EUSTON")) {
+                } else if (station.equalsIgnoreCase("EUSTON")) {
                     for (String dd : Euston) {
                         System.out.println(dd);
                     }
                     System.exit(0);
-                } else if (station.equals("WARRENSTREET")) {
+                } else if (station.equalsIgnoreCase("WARRENSTREET")) {
                     for (String ee : WarrenStreet) {
                         System.out.println(ee);
                     }
                     System.exit(0);
-                } else if (station.equals("BAKERSTREET")) {
+                } else if (station.equalsIgnoreCase("BAKERSTREET")) {
                     for (String ff : BakerStreet) {
                         System.out.println(ff);
                     }
                     System.exit(0);
-                } else if (station.equals("GREENPARK")) {
+                } else if (station.equalsIgnoreCase("GREENPARK")) {
                     for (String gg : GreenPark) {
                         System.out.println(gg);
                     }
                     System.exit(0);
-                } else if (station.equals("PICADILLYCIRCUS")) {
+                } else if (station.equalsIgnoreCase("PICADILLYCIRCUS")) {
                     for (String h : PicadillyCircus) {
                         System.out.println(h);
                     }
                     System.exit(0);
-                } else if (station.equals("BONDSTREET")) {
+                } else if (station.equalsIgnoreCase("BONDSTREET")) {
                     for (String i : Bondstreet) {
                         System.out.println(i);
                     }
                     System.exit(0);
-                } else if (station.equals("TEMPLE")) {
+                } else if (station.equalsIgnoreCase("TEMPLE")) {
                     for (String j : Temple) {
                         System.out.println(j);
                     }
                     System.exit(0);
                 }
-
             attempt ++;
 
             if (attempt ==1){
-                System.out.println("Station out of Zone One\nPlease Try again\ntwo attemps remaining \n\n ");
+                System.out.println("Station out of Zone One\nPlease Try again\ntwo attemps remaining \n ");
             }
             else if (attempt==2){
-                System.out.println("Station out of Zone One\nPlease Try again\none attemps remaining\n\n  ");
+                System.out.println("Station out of Zone One\nPlease Try again\none attemps remaining\n ");
             }
             else {
                 System.out.println("Station out of Zone One\nSorry ! You can not enter any more choice . Try next time");
             }
-
         }
-
     }
 }
 
